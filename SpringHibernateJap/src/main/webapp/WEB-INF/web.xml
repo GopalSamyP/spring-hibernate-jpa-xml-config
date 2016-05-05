@@ -10,9 +10,27 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
+    
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+    
+    <!-- <listener>
+		<listener-class>org.apache.logging.log4j.core.web.Log4jServletContextListener</listener-class>
+	</listener>
+
+	<filter>
+		<filter-name>log4jServletFilter</filter-name>
+		<filter-class>org.apache.logging.log4j.core.web.Log4jServletFilter</filter-class>
+	</filter>
+	 <filter-mapping>
+	        <filter-name>log4jServletFilter</filter-name>
+	        <url-pattern>/*</url-pattern>
+	        <dispatcher>REQUEST</dispatcher>
+	        <dispatcher>FORWARD</dispatcher>
+	        <dispatcher>INCLUDE</dispatcher>
+	        <dispatcher>ERROR</dispatcher>
+    </filter-mapping> -->
    
     <servlet>
         <servlet-name>application</servlet-name>
