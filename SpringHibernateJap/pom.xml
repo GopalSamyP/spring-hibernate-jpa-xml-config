@@ -13,7 +13,7 @@
 		<hibernate.version>4.3.5.Final</hibernate.version>
 		<junit.version>4.11</junit.version>
 		<jersey.version>2.17</jersey.version>
-		<mysql.version>5.1.32</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 		<common.dbcp.version>1.2.2</common.dbcp.version>
 	</properties>
 
